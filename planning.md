@@ -54,15 +54,15 @@
   - Role
     - Will be responsible for creating a new instance of a player
   - State
-    - lives
     - name
+    - lives
   - Behavior
     - lose_life
 
 -----
 ## Questions for Mentor
 - [ ] Does @current_player = player1 work in the constructor of the MathGame?
-Will it pass the reference?
+Will it pass the reference? Or should I set the current_player to the player.name for the tracking?
 - [ ] How do I create a new question every round? A new question object?
 - [ ] To assert the answer, how to I retreive the question's answer?
 - [ ] How do I toggle the "current player" after every round?
@@ -119,7 +119,6 @@ Will it pass the reference?
   - check_winner
     - if a player's lives = 0, set @winner to opposite player
 
- 
 - ### Class MathQuestion
   - Initialize
     - @rand_num1 = rand(1..20)
